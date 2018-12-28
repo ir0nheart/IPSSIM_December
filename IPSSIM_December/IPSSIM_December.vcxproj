@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A03AE0B3-619F-438F-A6E0-3B19CD7C6C49}</ProjectGuid>
+    <RootNamespace>IPSSIM_December</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DataSet.cpp" />
+    <ClCompile Include="dataSet_1.cpp" />
+    <ClCompile Include="dataSet_12.cpp" />
+    <ClCompile Include="dataSet_14B.cpp" />
+    <ClCompile Include="dataSet_15A.cpp" />
+    <ClCompile Include="dataSet_15B.cpp" />
+    <ClCompile Include="dataSet_17.cpp" />
+    <ClCompile Include="dataSet_18.cpp" />
+    <ClCompile Include="dataSet_19.cpp" />
+    <ClCompile Include="dataSet_20.cpp" />
+    <ClCompile Include="dataSet_22.cpp" />
+    <ClCompile Include="dataSet_2A.cpp" />
+    <ClCompile Include="dataSet_2B.cpp" />
+    <ClCompile Include="dataSet_3.cpp" />
+    <ClCompile Include="dataSet_4.cpp" />
+    <ClCompile Include="dataSet_5.cpp" />
+    <ClCompile Include="dataSet_6.cpp" />
+    <ClCompile Include="dataSet_7A.cpp" />
+    <ClCompile Include="dataSet_7B.cpp" />
+    <ClCompile Include="dataSet_7C.cpp" />
+    <ClCompile Include="dataSet_8.cpp" />
+    <ClCompile Include="dataSet_8D.cpp" />
+    <ClCompile Include="dataSet_8E.cpp" />
+    <ClCompile Include="driverMain.cpp" />
+    <ClCompile Include="Observation.cpp" />
+    <ClCompile Include="Schedule.cpp" />
+    <ClCompile Include="StepCycle.cpp" />
+    <ClCompile Include="StepList.cpp" />
+    <ClCompile Include="TimeCycle.cpp" />
+    <ClCompile Include="TimeList.cpp" />
+    <ClCompile Include="Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataSet.h" />
+    <ClInclude Include="dataSet_1.h" />
+    <ClInclude Include="dataSet_12.h" />
+    <ClInclude Include="dataSet_14B.h" />
+    <ClInclude Include="dataSet_15A.h" />
+    <ClInclude Include="dataSet_15B.h" />
+    <ClInclude Include="dataSet_17.h" />
+    <ClInclude Include="dataSet_18.h" />
+    <ClInclude Include="dataSet_19.h" />
+    <ClInclude Include="dataSet_20.h" />
+    <ClInclude Include="dataSet_22.h" />
+    <ClInclude Include="dataSet_2A.h" />
+    <ClInclude Include="dataSet_2B.h" />
+    <ClInclude Include="dataSet_3.h" />
+    <ClInclude Include="dataSet_4.h" />
+    <ClInclude Include="dataSet_5.h" />
+    <ClInclude Include="dataSet_6.h" />
+    <ClInclude Include="dataSet_7A.h" />
+    <ClInclude Include="dataSet_7B.h" />
+    <ClInclude Include="dataSet_7C.h" />
+    <ClInclude Include="dataSet_8.h" />
+    <ClInclude Include="dataSet_8D.h" />
+    <ClInclude Include="dataSet_8E.h" />
+    <ClInclude Include="Observation.h" />
+    <ClInclude Include="Schedule.h" />
+    <ClInclude Include="StepCycle.h" />
+    <ClInclude Include="StepList.h" />
+    <ClInclude Include="TimeCycle.h" />
+    <ClInclude Include="TimeList.h" />
+    <ClInclude Include="Timer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
