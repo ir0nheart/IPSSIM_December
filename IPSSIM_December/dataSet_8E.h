@@ -7,6 +7,103 @@ public:
 	dataSet_8E(std::string data_);
 	~dataSet_8E();
 	void parse_data() override;
+
+
+	std::string& get_cinact()
+	{
+		return cinact;
+	}
+
+	int& get_nbcfpr()
+	{
+		return nbcfpr;
+	}
+
+	int& get_nbcspr()
+	{
+		return nbcspr;
+	}
+
+	int& get_nbcppr()
+	{
+		return nbcppr;
+	}
+
+	int& get_nbcupr()
+	{
+		return nbcupr;
+	}
+
+	double& get_compfl()
+	{
+		return compfl;
+	}
+
+	double& get_cw()
+	{
+		return cw;
+	}
+
+	double& get_sigmaw()
+	{
+		return sigmaw;
+	}
+
+	double& get_rhow0()
+	{
+		return rhow0;
+	}
+
+	double& get_urhow0()
+	{
+		return urhow0;
+	}
+
+	double& get_drwdu()
+	{
+		return drwdu;
+	}
+
+	double& get_visc0()
+	{
+		return visc0;
+	}
+
+	double& get_compma()
+	{
+		return compma;
+	}
+
+	double& get_cs()
+	{
+		return cs;
+	}
+
+	double& get_sigmas()
+	{
+		return sigmas;
+	}
+
+	double& get_rhos()
+	{
+		return rhos;
+	}
+
+	std::string& get_adsmod()
+	{
+		return adsmod;
+	}
+
+	double& get_chi1()
+	{
+		return chi1;
+	}
+
+	double& get_chi2()
+	{
+		return chi2;
+	}
+
 private:
 	//Data Set 8E Output controls and options for ".bcof", ".bcos",".bcou", and ".bcop" Files
 	std::string cinact; //Set to a value of "Y" to list all sources and boundary conditions.

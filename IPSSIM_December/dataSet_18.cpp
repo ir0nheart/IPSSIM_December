@@ -44,11 +44,11 @@ void dataSet_18::parse_data()
 			line.assign(str_start, str_end);
 			iqcu[j] = std::stoi(strtok(line.data(), " "));
 			quinc[j] = std::stod(strtok(NULL, " "));
-		
-			j++;
+			str_start = &data[i + 1];
+			
 			if (j == nsou - 1)
 				break;
-			str_start = &data[i + 1];
+			j++;
 		}
 	}
 

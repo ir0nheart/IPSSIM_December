@@ -38,7 +38,7 @@
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>NotSet</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PlatformToolset>v120</PlatformToolset>
@@ -82,6 +82,9 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataSet.cpp" />
@@ -108,6 +111,9 @@
     <ClCompile Include="dataSet_8D.cpp" />
     <ClCompile Include="dataSet_8E.cpp" />
     <ClCompile Include="driverMain.cpp" />
+    <ClCompile Include="Element.cpp" />
+    <ClCompile Include="initialConditions.cpp" />
+    <ClCompile Include="Node.cpp" />
     <ClCompile Include="Observation.cpp" />
     <ClCompile Include="Schedule.cpp" />
     <ClCompile Include="StepCycle.cpp" />
@@ -140,6 +146,9 @@
     <ClInclude Include="dataSet_8.h" />
     <ClInclude Include="dataSet_8D.h" />
     <ClInclude Include="dataSet_8E.h" />
+    <ClInclude Include="Element.h" />
+    <ClInclude Include="initialConditions.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="Observation.h" />
     <ClInclude Include="Schedule.h" />
     <ClInclude Include="StepCycle.h" />

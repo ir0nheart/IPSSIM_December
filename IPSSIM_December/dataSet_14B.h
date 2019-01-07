@@ -8,6 +8,37 @@ public:
 	dataSet_14B(std::string data_,int nnodes_,std::string type_);
 	~dataSet_14B();
 	void parse_data() override;
+
+	std::vector<int>& get_ii() 
+	{
+		return ii;
+	}
+
+	std::vector<int>& get_nreg()
+	{
+		return nreg;
+	}
+
+	std::vector<double>& get_x()
+	{
+		return x;
+	}
+
+	std::vector<double>& get_y()
+	{
+		return y;
+	}
+
+	std::vector<double>& get_z()
+	{
+		return z;
+	}
+
+	std::vector<double>& get_por()
+	{
+		return por;
+	}
+
 private:
 	int nnodes;
 	std::string type;

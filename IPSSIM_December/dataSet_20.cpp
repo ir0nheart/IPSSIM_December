@@ -42,10 +42,11 @@ void dataSet_20::parse_data()
 			line.assign(str_start, str_end);
 			iubc[j] = std::stoi(strtok(line.data(), " "));
 			ubc[j] = std::stod(strtok(NULL, " "));
-			j++;
+			str_start = &data[i + 1];
 			if (j == nubc - 1)
 				break;
-			str_start = &data[i + 1];
+			j++;
+			
 		}
 	}
 

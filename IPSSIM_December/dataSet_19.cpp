@@ -45,10 +45,11 @@ void dataSet_19::parse_data()
 			ipbc[j] = std::stoi(strtok(line.data(), " "));
 			pbc[j] = std::stod(strtok(NULL, " "));
 			ubc[j] = std::stod(strtok(NULL, " "));
-			j++;
+			str_start = &data[i + 1];
 			if (j == npbc - 1)
 				break;
-			str_start = &data[i + 1];
+			
+			j++;
 		}
 	}
 

@@ -46,10 +46,11 @@ void dataSet_17::parse_data()
 			iqcp[j] = std::stoi(strtok(line.data(), " "));
 			qinc[j] = std::stod(strtok(NULL, " "));
 			uinc[j] = std::stod(strtok(NULL, " "));
-			j++;
+			str_start = &data[i + 1];
+	
 			if (j == nsop - 1)
 				break;
-			str_start = &data[i + 1];
+			j++;
 		}
 	}
 
